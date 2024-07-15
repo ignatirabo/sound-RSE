@@ -1,0 +1,13 @@
+int i;
+int priv;
+security:
+{
+    priv = 1;
+}
+main:
+{
+    while(i > priv) {
+        i = i + 1;
+        priv = priv + 2;
+    }
+}

@@ -1,0 +1,13 @@
+(ocamllex
+  (modules lexer thr_lexer)
+)
+
+(ocamlyacc
+  (modules parser thr_parser)
+)
+
+(executable
+  (name main)
+  (libraries threads apron apron.boxMPQ apron.octMPQ apron.polkaMPQ bitv unix z3)
+  (modes native)
+)

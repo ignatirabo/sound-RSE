@@ -1,0 +1,18 @@
+int priv;
+int i;
+security:
+{
+    priv = 1;
+}
+main:
+{
+    if (priv > 0) {
+        i = 0;
+    } else {
+        i = 0;
+    }
+    while (i < 10) {
+        i = i + 1;
+        priv = priv + 5;
+    }
+}

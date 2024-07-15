@@ -1,0 +1,17 @@
+int priv;
+int i;
+int y;
+security:
+{
+    priv = 1;
+}
+main:
+{
+  i = 0;
+  while (i < 100) {
+    if (priv > 0) {
+      y = 5;
+    } else {}
+    i = i + 1;
+  }
+}

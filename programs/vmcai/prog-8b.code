@@ -1,0 +1,21 @@
+int i;
+int x;
+int w;
+int priv;
+security:
+{
+    priv = 1;
+}
+main:
+{
+    i = 0;
+    w = 2;
+    x = 100;
+    while(i < x) {
+        if (x <= 0) {
+            w = priv;
+        } else {}
+        i = i + 2;
+        x = x + 1;
+    }
+}

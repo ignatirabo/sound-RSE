@@ -1,0 +1,14 @@
+int priv;
+int i;
+int z;
+security:
+{
+    priv = 1;
+}
+main:
+{
+    while(i < z) {
+        i = i + 1;
+        priv = priv + 5;
+    }
+}

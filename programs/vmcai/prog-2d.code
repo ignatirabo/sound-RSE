@@ -1,0 +1,22 @@
+int i;
+int y;
+int priv;
+security:
+{
+    priv = 1;
+}
+main:
+{
+    if (priv < 0) {
+        priv = 0;
+    } else {}
+    while (i < 10) {
+        i = i + 1;
+        priv = priv + 2;
+    }
+    if (priv >= 0) {
+        y = y + 1;
+    } else {
+        y = 0;
+    }
+}

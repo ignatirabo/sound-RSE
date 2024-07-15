@@ -1,0 +1,14 @@
+int p;
+int y;
+security:
+{
+    p = 1;
+}
+main:
+{
+    if (p > 0) {
+        y = 0;
+    } else {
+        y = 0;
+    }
+}
